@@ -133,12 +133,6 @@ export default function ProductEditPage(props) {
       {/* Header */}
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          {/* <div className="text-xs text-slate-400">
-            <Link href="/admin/products" className="hover:underline">
-              Produk
-            </Link>{' '}
-            / Edit
-          </div> */}
           <h1 className="text-2xl font-semibold">Edit Produk</h1>
         </div>
       </div>
@@ -196,18 +190,6 @@ export default function ProductEditPage(props) {
               />
             </div>
           </div>
-
-          {/* <div className="flex items-center gap-2 pt-2">
-            <input
-              id="active"
-              type="checkbox"
-              checked={!!form.active}
-              onChange={(e) => onChange('active', e.target.checked)}
-            />
-            <label htmlFor="active" className="text-sm">
-              Aktif
-            </label>
-          </div> */}
         </section>
 
         {/* Harga & Stok */}
@@ -222,7 +204,6 @@ export default function ProductEditPage(props) {
                 onChange={(v) => onChange('price', v)}
                 placeholder="contoh: 125.000"
               />
-              {/* <p className="text-[11px] text-slate-500">Nilai yang disimpan berupa angka murni.</p> */}
             </div>
 
             <div className="flex flex-col gap-1">

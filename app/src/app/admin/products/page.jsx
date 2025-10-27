@@ -160,7 +160,6 @@ export default function ProductsPage() {
                   <td className="p-3">{item.name}</td>
                   <td className="p-3">{item.category?.name}</td>
                   <td className="p-3 text-right">Rp {nf(item.price)}</td>
-                  {/* <td className="p-3 text-right">{item.stock}</td> */}
                   <td className="p-3 text-right">
                     <div className="flex items-center gap-2 justify-end">
                       <span> {item.stock} </span>

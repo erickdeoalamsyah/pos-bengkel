@@ -157,16 +157,12 @@ function DashboardInner() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-3">
       {/* Header */}
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
         <div>
           <h1 className="text-2xl font-semibold">Overview dashboard</h1>
-          {/* <div className="text-xs text-slate-400">
-            Ringkasan operasional bengkel • {range.dateWib} ({mode === "today" ? "hari ini" : mode})
-          </div> */}
         </div>
-
         <div className="flex flex-wrap gap-2 items-center">
           <div className="rounded-xl border border-white/10 p-1 bg-black/60">
             {["today", "7d", "30d"].map((k) => (
@@ -183,13 +179,6 @@ function DashboardInner() {
               </button>
             ))}
           </div>
-
-          {/* <input
-            type="date"
-            value={day}
-            onChange={(e) => setDay(e.target.value)}
-            className="px-3 py-2 rounded-xl border border-white/10 bg-black text-white text-sm"
-          /> */}
           <div className="w-[220px]">
             <WibDatePicker
               value={day}
